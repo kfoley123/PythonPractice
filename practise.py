@@ -1,3 +1,5 @@
+print("==========================================")
+
 #Given a string, we'll say that the front is the first 3 chars of the string. If the string length is less than 3, the front is whatever is there. Return a new string which is 3 copies of the front.
 
 #front3('Java') → 'JavJavJav'
@@ -33,7 +35,7 @@ def front_back(str):
 
 print(front_back("hello"))
 
-
+print("==========================================")
 
 #Given a non-empty string and an int n, return a new string where the char at index n has been removed. The value of n will be a valid index of a char in the original string (i.e. n will be in the range 0..len(str)-1 inclusive).
 
@@ -41,3 +43,70 @@ print(front_back("hello"))
 #missing_char('kitten', 1) → 'ktten'
 #missing_char('kitten', 0) → 'itten'
 #missing_char('kitten', 4) → 'kittn'
+
+def missing_char(str, n):
+  start = str[:n]
+  end = str[n+1:]
+  
+  return start + end 
+
+print(missing_char("kitten", 2))
+
+print("==========================================")
+
+#Given a string, return a new string where "not " has been added to the front. However, if the string already begins with "not", return the string unchanged.
+
+
+#not_string('candy') → 'not candy'
+#not_string('x') → 'not x'
+#not_string('not bad') → 'not bad
+
+def not_string(str):
+  if str[0:3] == "not":
+    return str
+  else: 
+    return "not " + str
+
+print(not_string("not today"))
+
+print("==========================================")
+
+#Given 2 int values, return True if one is negative and one is positive. Except if the parameter "negative" is True, then return True only if both are negative.
+
+
+#pos_neg(1, -1, False) → True
+#pos_neg(-1, 1, False) → True
+#pos_neg(-4, -5, True) → True
+
+def pos_neg(a, b, negative):
+  if negative == True:
+    if (a <= -1 and b <= -1): 
+      return True
+    else:
+      return False
+  if negative == False:
+    if (a >= 1 and b <= -1) or (a<=-1 and b>=1):
+      return True
+    else:
+      return False
+
+print(pos_neg(1, -1, True))
+
+print("==========================================")
+
+## Given an int n, return True if it is within 10 of 100 or 200. Note: abs(num) computes the absolute value of a number.
+
+
+#near_hundred(93) → True
+#near_hundred(90) → True
+#near_hundred(89) → False
+
+def near_hundred(n):
+  if (abs(100-n) <= 10) or (abs(200-n) <= 10):
+    return True
+  else:
+    return False
+
+print(near_hundred(102))
+
+print("==========================================")
