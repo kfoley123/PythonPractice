@@ -2,7 +2,7 @@
 
 print("=====================================")
 
-#Given a string and a non-negative int n, return a larger string that is n copies of the original string.
+# 1. Given a string and a non-negative int n, return a larger string that is n copies of the original string.
 
 
 #string_times('Hi', 2) → 'HiHi'
@@ -15,4 +15,25 @@ def string_times(str, n):
    result += str
   return result 
 
+print(string_times("hello", 4))
+
+print("=====================================")
+
+# 2. Given a string and a non-negative int n, we'll say that the front of the string is the first 3 chars, or whatever is there if the string is less than length 3. Return n copies of the front;
+
+
+#front_times('Chocolate', 2) → 'ChoCho'
+#front_times('Chocolate', 3) → 'ChoChoCho'
+#front_times('Abc', 3) → 'AbcAbcAbc'
+
+def front_times(str, n):
+  front = str[:3]
+  answer=""
+  for i in range(n):
+    answer += front
+  return answer 
+
+print(front_times("meow", 3))
+
+print("=====================================")
 
