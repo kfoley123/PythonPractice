@@ -74,3 +74,18 @@ print(string_splosion("meow"))
 
 print("=====================================")
 
+# Given an array of ints, return the number of 9's in the array.
+
+
+# array_count9([1, 2, 9]) → 1
+# array_count9([1, 9, 9]) → 2
+# array_count9([1, 9, 9, 3, 9]) → 3
+
+def array_count9(nums):
+  count = nums.count(9)
+  return count 
+
+print(array_count9([1, 9, 9, 5]))
+
+print("=====================================")
+
