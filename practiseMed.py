@@ -146,6 +146,11 @@ def array123(nums):
 # 9
 # 10
 
+i = 0 
+while i <= 9:
+	i += 1
+	print(i)
+
   #2 Print the following pattern
 
 # expected output:
@@ -162,3 +167,12 @@ for x in range(5):
 	for y in range(1,i):
 		print(y)
 
+#3 Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
+
+# For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+10)
+
+def numberSum(num):
+    total = sum(range(1, num))
+    print(total)
+        
+print(numberSum(10))
