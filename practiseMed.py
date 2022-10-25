@@ -269,3 +269,21 @@ def reverseList(nums):
         print(nums[i])
 
 reverseList([10, 20, 30, 40, 50])
+
+print("=====================================")
+
+#9 Display numbers from -10 to -1 using for loop
+
+#expected output -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+
+for num in range(-10, 0, 1):
+    print(num)
+
+print("=====================================")
+
+#10 Use else block to display a message “Done” after successful execution of for loop
+
+for i in range(5):
+    print(i)
+else:
+    print("done!")
