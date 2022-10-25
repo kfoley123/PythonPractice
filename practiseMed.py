@@ -262,3 +262,10 @@ print("=====================================")
 
 #8 Print list in reverse order using a loop
 
+def reverseList(nums):
+    i = len(nums)
+    for x in nums:
+        i -= 1
+        print(nums[i])
+
+reverseList([10, 20, 30, 40, 50])
