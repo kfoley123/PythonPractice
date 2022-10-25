@@ -1,4 +1,5 @@
 # med practise question with loops 
+# https://codingbat.com/prob/p145834
 
 print("=====================================")
 
@@ -81,6 +82,8 @@ print("=====================================")
 # last2('xaxxaxaxx') → 1
 # last2('axxxaaxx') → 2
 
+
+
 #6 Given an array of ints, return the number of 9's in the array.
 
 
@@ -127,3 +130,35 @@ def array123(nums):
     if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
       return True
   return False 
+
+  #https://pynative.com/python-if-else-and-for-loop-exercise-with-solutions/
+
+  #1 Print First 10 natural numbers using while loop
+# expected output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# 7
+# 8
+# 9
+# 10
+
+  #2 Print the following pattern
+
+# expected output:
+# 1
+# 1 2
+# 1 2 3 
+# 1 2 3 4 
+# 1 2 3 4 5 
+
+i = 1
+for x in range(5):
+	print("loop", x)
+	i+=1
+	for y in range(1,i):
+		print(y)
+
