@@ -241,3 +241,20 @@ def digitCount(num):
 digitCount(21342646)
 
 print("=====================================")
+
+
+#7 Write a program to use for loop to print the following reverse number pattern
+
+# 5 4 3 2 1
+# 4 3 2 1
+# 3 2 1 
+# 2 1
+# 1
+
+i = 1 
+for x in range(5):
+    print("loop", x)
+    i += 1
+    for y in range(7 -i, 0, -1):
+        print(y) 
+print("=====================================")
