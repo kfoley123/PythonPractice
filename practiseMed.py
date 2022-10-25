@@ -167,6 +167,8 @@ for x in range(5):
 	for y in range(1,i):
 		print(y)
 
+print("=====================================")
+
 #3 Write a program to accept a number from a user and calculate the sum of all numbers from 1 to a given number
 
 # For example, if the user entered 10 the output should be 55 (1+2+3+4+5+6+7+8+9+10)
@@ -175,4 +177,29 @@ def numberSum(num):
     total = sum(range(1, num))
     print(total)
         
-print(numberSum(10))
+(numberSum(10))
+
+print("=====================================")
+
+#4 Write a program to print multiplication table of a given number
+#For example, num = 2 so the output should be
+#2
+#4
+#6 
+#8 
+#10
+#12
+#14
+#16
+#18
+#20
+
+def numMultiply(num):
+    for x in range(10):
+        x += 1 
+        print(x*num)
+
+numMultiply(5)
+
+
+print("=====================================")
