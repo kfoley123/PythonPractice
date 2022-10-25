@@ -203,3 +203,41 @@ numMultiply(5)
 
 
 print("=====================================")
+
+
+#5 Write a program to display only those numbers from a list that satisfy the following conditions
+
+# The number must be divisible by five
+# If the number is greater than 150, then skip it and move to the next number
+# If the number is greater than 500, then stop the loop
+
+# given numbers= [12, 75, 150, 145, 525, 50]
+# output: 75 150 145 
+
+def numFilter(nums):
+    answer = []
+    for x in nums:
+        if x > 500:
+           break
+        elif x > 150: 
+            continue
+        elif x% 5 == 0:
+            print(x)
+
+
+numFilter([12, 75, 150, 180, 145, 525, 50])
+
+print("=====================================")
+
+#6 Write a program to count the total number of digits in a number using a while loop.
+
+def digitCount(num):
+    count = 0 
+    answer = map(int, str(num))
+    for x in answer:
+        count += 1
+    print(count)
+
+digitCount(21342646)
+
+print("=====================================")
