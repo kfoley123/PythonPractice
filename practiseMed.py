@@ -257,4 +257,8 @@ for x in range(5):
     i += 1
     for y in range(7 -i, 0, -1):
         print(y) 
+
 print("=====================================")
+
+#8 Print list in reverse order using a loop
+
